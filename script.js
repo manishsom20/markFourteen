@@ -35,11 +35,11 @@ function showMsg(msg) {
 
 function logic(ip,qs,cp) {
   if(cp>ip) {
-    var profit = cp-ip;
+    var profit = (cp-ip)*qs;
     var profitPercent = (profit/ip)*100;
     showMsg(`Hey, the profit is ${profit} and the percent is ${profitPercent}%`);
   } else if(ip>cp) {
-    var loss = ip-cp;
+    var loss = (ip-cp)*qs;
     var lossPercent = (loss/ip)*100;
     showMsg(`Hey, the loss is ${loss} and the percent is ${lossPercent}%`);
   } else {
