@@ -15,17 +15,21 @@ function clickHandler() {
         logic(initialP,quantityS,currentP);
       } else {
         showMsg("Invalid Current Price");
+        outputMsg.style.color = "red";
       }
     } else {
       showMsg("Invalid Quantity of Stocks");
+      outputMsg.style.color = "red";
     }
   } else {
     showMsg("Invalid Intial Price");
+    outputMsg.style.color = "red";
   }
 }
 
 function hideMsg() {
   outputMsg.style.display = "none";
+  outputMsg.style.color = "#6D28D9";
 }
 
 function showMsg(msg) {
