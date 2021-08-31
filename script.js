@@ -11,7 +11,7 @@ function clickHandler() {
   hideMsg();
   if(initialP>0) {
     if(quantityS>0) {
-      if(currentPrice>0) {
+      if(currentP>0) {
         logic(initialP,quantityS,currentP);
       } else {
         showMsg("Invalid Current Price");
